@@ -1,0 +1,59 @@
+body {
+    background-color : gray;
+    color : white;
+}
+
+img {
+    position:absolute; left : 0px; top : 0px;
+}
+
+.container#left {
+    margin-top : 0px;
+    margin-left: 10%;
+    margin-right: 0px;
+    width : 35%;
+    font-size : 18px;
+    text-align : center;
+    font-family : cambria;
+    float : left;
+}
+.container#right {
+    margin-top : 12.5%;
+    margin-left: 5%;
+    margin-right: 10%;
+    width : 35%;
+    font-size : 20px;
+    text-align : left;
+    font-family : cambria;
+    float : left;
+}
+
+
+h1 {
+    color : peachPuff;
+    text-align : center;
+    font-family : Cochin;
+}
+
+h3 {
+    color : peachPuff;
+    text-align : center;
+}
+
+a {
+    color : lightSteelBlue;
+}
+
+highlight#mail {
+    background-color : lightSteelBlue;
+}
+
+.cerceve {
+    border-style: double;
+    border-width: 10px;
+    border-color : peachPuff;
+}
+
+hr {
+    border-color : peachPuff;
+}
