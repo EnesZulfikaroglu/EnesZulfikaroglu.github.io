@@ -1,10 +1,11 @@
 body {
-    background-color : gray;
+    background-color : black;
     color : white;
 }
 
-img {
-    position:absolute; left : 0px; top : 0px;
+.banner img {
+    display: block;
+    margin: 0 auto;
 }
 
 .container#left {
@@ -30,13 +31,13 @@ img {
 
 
 h1 {
-    color : peachPuff;
+    color : white;
     text-align : center;
     font-family : Cochin;
 }
 
 h3 {
-    color : peachPuff;
+    color : deepskyblue;
     text-align : center;
 }
 
@@ -51,9 +52,10 @@ highlight#mail {
 .cerceve {
     border-style: double;
     border-width: 10px;
-    border-color : peachPuff;
+    border-color : gray;
 }
 
 hr {
-    border-color : peachPuff;
+    border-color : gray;
 }
+
