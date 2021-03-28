@@ -8,25 +8,18 @@ body {
     margin: 0 auto;
 }
 
-.container#left {
-    margin-top : 0px;
-    margin-left: 10%;
-    margin-right: 0px;
-    width : 35%;
-    font-size : 18px;
-    text-align : center;
-    font-family : cambria;
-    float : left;
+
 }
-.container#right {
-    margin-top : 12.5%;
-    margin-left: 5%;
-    margin-right: 10%;
-    width : 35%;
-    font-size : 20px;
-    text-align : left;
-    font-family : cambria;
-    float : left;
+p.kutu {
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    margin: auto;
+}
+
+p {
+    text-align: center;
 }
 
 
@@ -57,5 +50,18 @@ highlight#mail {
 
 hr {
     border-color : gray;
+}
+.konteyner {
+
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    background-color: black;
+}
+
+div.kolon {
+    background-color: gray;
+    width: 32%;
+    margin: 20px 0 0;
 }
 
