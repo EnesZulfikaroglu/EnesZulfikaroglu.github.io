@@ -64,7 +64,7 @@ div.kolon {
     border: 10px solid rgb(48, 54, 78);
     background-color: rgb(48, 54, 78);
     margin: 20px;
-    transition : all  0.5s ;
+    transition : all  0.25s ;
 }
 
 .kutu:hover{
