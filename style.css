@@ -42,6 +42,7 @@ highlight#mail {
 hr {
     border-color : rgb(118, 127, 161);
 }
+
 .konteyner {
 
     display: flex;
@@ -74,4 +75,8 @@ div.kolon {
     background-color: rgb(75, 82, 110);
     margin: 16px;
     
+}
+
+#idea{
+    text-align: center;  
 }
