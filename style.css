@@ -57,12 +57,13 @@ div.kolon {
 }
 
 .kutu {
-    box-shadow: 0 0 0 2px rgb(9, 0, 43);
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
     border: 10px solid rgb(48, 54, 78);
     background-color: rgb(48, 54, 78);
     margin: 20px;
+    transition : all  0.9s ;
 }
 
 .kutu:hover{
@@ -72,4 +73,5 @@ div.kolon {
     border: 10px solid rgb(75, 82, 110);
     background-color: rgb(75, 82, 110);
     margin: 16px;
+    
 }
