@@ -1,6 +1,10 @@
 body {
     background-color : rgb(118, 127, 161);
     color : white;
+    font-family: 'Mali', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Space Mono', monospace;
 }
 
 .banner img {
@@ -17,9 +21,9 @@ p {
 h1 {
     color : rgb(48, 54, 78);
     text-align : center;
-    font-family : Cochin;
     font-size: 50px;
     display: block;
+    font-family: 'Sacramento', cursive;
 }
 
 h3 {
@@ -116,6 +120,10 @@ button {
     left: 0;
     right: 0;
     transition : all  0.25s;
+    font-family: 'Mali', cursive;
+    font-family: 'Quantico', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Space Mono', monospace;
 }
 
 button:hover{
