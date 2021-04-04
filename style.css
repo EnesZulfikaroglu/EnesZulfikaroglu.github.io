@@ -2,9 +2,6 @@ body {
     background-color : rgb(118, 127, 161);
     color : white;
     font-family: 'Mali', cursive;
-    font-family: 'Quantico', sans-serif;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Space Mono', monospace;
 }
 
 .banner img {
@@ -23,7 +20,8 @@ h1 {
     text-align : center;
     font-size: 50px;
     display: block;
-    font-family: 'Sacramento', cursive;
+    font-family: 'Special Elite', cursive;
+
 }
 
 h3 {
