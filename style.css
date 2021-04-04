@@ -4,6 +4,7 @@ body {
 }
 
 .banner img {
+    position: relative;
     display: block;
     margin: 0 auto;
 }
@@ -18,6 +19,7 @@ h1 {
     text-align : center;
     font-family : Cochin;
     font-size: 50px;
+    display: block;
 }
 
 h3 {
@@ -57,14 +59,25 @@ div.kolon {
     margin: 20px 0 0;
 }
 
+.kolon #right {
+    position: fixed;
+    display: block;
+}
+
+.kolon #left {
+    position: fixed;
+    display: block;
+}
+
 .kutu {
+    display: block;
     box-shadow: 0 0 0 2px rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
     border: 10px solid rgb(48, 54, 78);
     background-color: rgb(48, 54, 78);
     margin: 20px;
-    transition : all  0.25s ;
+    transition : all  0.25s;
 }
 
 .kutu:hover{
@@ -78,5 +91,36 @@ div.kolon {
 }
 
 #idea{
+    display: none;
     text-align: center;  
+}
+
+#about{
+    display: none; 
+}
+
+button {
+    position: relative;
+    background-color: rgb(48, 54, 78);
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 10px solid rgb(48, 54, 78);
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    margin: auto;
+    left: 0;
+    right: 0;
+    transition : all  0.25s;
+}
+
+button:hover{
+    border-radius: 10px;
+    padding: 10px;
+    border: 10px solid rgb(75, 82, 110);
+    background-color: rgb(75, 82, 110);
 }
