@@ -6,7 +6,6 @@
   
   body {
     background: #353540;
-
   }
 
   .cities {
@@ -125,3 +124,21 @@
     margin : auto;
     transition : all  0.25s;
   }
+
+  a#kopru {
+    position: absolute;
+    background-color: rgb(48, 54, 78);
+    color: white;
+    padding: 16px 32px;
+    text-align : center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    width : 220px;
+    height : 70px;
+    top : 50px;
+    left: 20px;
+    margin : auto;
+    transition : all  0.25s;
+}
