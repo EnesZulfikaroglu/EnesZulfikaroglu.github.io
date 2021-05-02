@@ -30,14 +30,14 @@
     }
   }
   
-  .b-game-card {
+  .city-card {
     position: relative;
     z-index: 1;
     width: 100%;
     padding-bottom: 150%;
     perspective: 1000px;
   }
-  .b-game-card__cover {
+  .city-card__cover {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -54,7 +54,7 @@
     transform: skewX(0.001deg);
     transition: transform 0.35s ease-in-out;
   }
-  .b-game-card__cover::after {
+  .city-card__cover::after {
     display: block;
     content: "";
     position: absolute;
@@ -68,13 +68,13 @@
     will-change: transform;
     transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
   }
-  .b-game-card:hover .b-game-card__cover {
+  .city-card:hover .city-card__cover {
     transform: rotateX(7deg) translateY(-6px);
   }
-  .b-game-card:hover .b-game-card__cover::after {
+  .city-card:hover .city-card__cover::after {
     transform: translateY(0%);
   }
-  .b-game-card::before {
+  .city-card::before {
     display: block;
     content: "";
     position: absolute;
@@ -89,13 +89,13 @@
     transform: skewX(0.001deg);
     transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
   }
-  .b-game-card:hover::before {
+  .city-card:hover::before {
     opacity: 0.6;
     transform: rotateX(7deg) translateY(-6px) scale(1.05);
   }
 
   #saatKutu {
-      position: absolute;
+      position: relative;
       background-color: rgb(48, 54, 78);
       color: white;
       padding: 16px 32px;
@@ -104,6 +104,8 @@
       font-size: 16px;
       border-radius: 10px;
       box-shadow: 0 0 0 2px rgb(255, 255, 255);
+      width : 200px;
+      height : 70px;
       top : 100px;
       bottom : 700px;
       left: 0;
