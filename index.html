@@ -1,102 +1,26 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <title>Kazame</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mali:wght@200&family=Quantico&family=Sacramento&family=Space+Mono&display=swap" rel="stylesheet">
-    
-    <script src="script.js" defer></script>
-    <script src="script2.js" defer></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-02YL1917VS"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-02YL1917VS');
-    </script>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <div class="banner">
-        <img src="https://www.marmara.edu.tr/_assets/marmara/custom/images/marmara_universitesi_logo.png" alt="Marmara Üniversitesi Logosu">
-        <br><br>
-        <h1>GRUP 6 - KAZAME</h1>
-        <button id="button3">Tıkla</button>
-        <br><br>
-        <div class="konteyner">
-            <div class="kolon" id="left">
-                <br>
-                <button id="button1">Geliştiriciler</button>
-                <div id="about">
-                    <div class="kutu">
-                        <ul>
-                            <h3>MUZAFFER AKDOĞAN</h3>
-                            <hr>
-                            <p>Merhaba ben Muzaffer. Kayseri' de doğdum, büyüdüm. İstanbulda <a href="http://blm.teknoloji.marmara.edu.tr/"><ins>Marmara Üniversitesi Teknoloji fakültesi Bilgisayar Mühendisliği</ins></a>
-                            öğrencisiyim. Gelecek beklentim, okul hayatımı tam donanımlı bir şekilde tamamlayarak, yeteneklerimi ortaya çıkarabileceğim
-                            bir firmada özgürce ve zevk alarak yeni projelere imza atacağım bir yazılımcı olmak ve pastırmaların ucuzlayarak herkesin alabileceği düzeye gelmesi.</p>
-                            <br>
-                            <em><b>mail</b></em>: <highlight id="mail"><b>muzafferakdgnn@gmail.com</b></highlight>
-                            <a href="https://github.com/muzafferakdogan/"><ins>Github</ins></a>
-                            <br><br>
-                        </ul>
-                    </div>
-                    <div class="kutu">
-                        <ul>
-                            <h3>ARDA KAYNAR</h3>
-                            <hr>
-                            <p>Merhaba ben Arda. 20 yaşındayım. Denizli’ de doğup büyüdüm ve şu an <a href="http://blm.teknoloji.marmara.edu.tr/"><ins>Marmara Üniversitesi Teknoloji fakültesi Bilgisayar Mühendisliği</ins></a>
-                            öğrencisiyim. Kendimi IOS alanında geliştiriyorum. Dünyamıza katkı sağlayacak projelerde bulunmaktan mutluluk duyarım. </p>
-                            <br>
-                            <em><b>mail</b></em>: <highlight id="mail"><b>arda.kaynar1093@gmail.com</b></highlight>
-                            <a href="https://github.com/ardakaynar/"><ins>Github</ins></a>
-                            <br><br>
-                        </ul>
-                    </div>
-                    <div class="kutu">
-                        <ul>
-                            <h3>ENES ZÜLFİKAROĞLU</h3>
-                            <hr>
-                            <p>Merhaba, ben Enes. 1999 yılında <b>İstanbul</b>' da doğdum ve büyüdüm. <em>Çağrıbey Anadolu Lisesi</em>' nden mezun oldum.
-                            Günümüzde <a href="http://blm.teknoloji.marmara.edu.tr/"><ins>Marmara Üniversitesi Teknoloji fakültesi Bilgisayar Mühendisliği</ins></a> bölümünde eğitim görüyorum.</p>
-                            <br>
-                            <em><b>mail</b></em>: <highlight id="mail"><b>enes.zulfikaroglu34@gmail.com</b></highlight>
-                            <a href="https://github.com/EnesZulfikaroglu/"><ins>Github</ins></a>
-                            <br><br>
-                        </ul>
-                    </div>
-                    <div class="kutu">
-                        <ul>
-                            <h3>CEREN ZEYNEP OZKAHRAMAN</h3>
-                            <hr>
-                            <p>Merhaba ben Zeynep.2000 yılında İstanbul da doğdum.Özel Şefkat Fen Lisesi mezunuyum.Şu an da
-                            <a href="http://blm.teknoloji.marmara.edu.tr/"><ins>Marmara Üniversitesi Teknoloji fakültesi Bilgisayar Mühendisliği</ins></a> 3.sınıf öğrencisiyim.</p>
-                            <br>
-                            <em><b>mail</b></em>: <highlight id="mail"><b>zeynepozkahraman@gmail.com</b></highlight>
-                            <br><br>
-                            </ul>
-                    </div>
-                </div> 
-            </div>          
-   
-        <div class="kolon" id="right">
-            <br>
-            <button id="button2">Proje</button>
-            <div class="kutu" id="idea">
-                <h3><strong>PROJE FİKRİ</strong></h3>
-                <hr>
-                <p><ul>Dünya haritası üzerinde seçilen bölgede, güneşin yeryüzüne konumunu, güzel bir arayüz ile gösteren site. Eğer güneş doğmak üzere ise,
-                güzel bir gün doğumu arkaplanı olması; batmak üzere ise, güzel bir gün batımı arkaplanı olması gibi güneşin konumuna göre sitenin teması da değişir.
-                Aynı zamanda seçilen konumdaki saati gösterir. Şematik bir gösterim kullanılarak da güneşin tam konumu belli edilir.</ul></p>
-            </div>
+    <div class="l-container">
+        <div class="b-game-card">
+          <div class="b-game-card__cover" style="background-image: url(Resimler/Tokyo.jpg);"></div>
         </div>
-    </div>
+        <div class="b-game-card">
+          <div class="b-game-card__cover" style="background-image: url(Resimler/istanbul.jpg);"></div>
+        </div>
+        <div class="b-game-card">
+          <div class="b-game-card__cover" style="background-image: url(Resimler/NewYork.aspx);"></div>
+        </div>
+        <div class="b-game-card">
+          <div class="b-game-card__cover" style="background-image: url(Resimler/Londra.jpg);"></div>
+        </div>
+      </div>
 </body>
-
 </html>
