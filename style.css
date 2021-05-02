@@ -24,6 +24,7 @@
     max-width: 1200px;
     padding: 30px;
   }
+
   @media screen and (max-width: 760px) {
     .l-container {
       grid-template-columns: repeat(2, 1fr);
@@ -37,6 +38,7 @@
     padding-bottom: 150%;
     perspective: 1000px;
   }
+
   .city-card__cover {
     position: absolute;
     z-index: 1;
@@ -54,6 +56,7 @@
     transform: skewX(0.001deg);
     transition: transform 0.35s ease-in-out;
   }
+
   .city-card__cover::after {
     display: block;
     content: "";
@@ -68,12 +71,15 @@
     will-change: transform;
     transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
   }
+
   .city-card:hover .city-card__cover {
     transform: rotateX(7deg) translateY(-6px);
   }
+
   .city-card:hover .city-card__cover::after {
     transform: translateY(0%);
   }
+
   .city-card::before {
     display: block;
     content: "";
@@ -89,27 +95,33 @@
     transform: skewX(0.001deg);
     transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
   }
+
   .city-card:hover::before {
     opacity: 0.6;
     transform: rotateX(7deg) translateY(-6px) scale(1.05);
   }
 
+  button {
+    color : White;
+    font-size : 50px;
+  }
+
   #saatKutu {
-      position: relative;
-      background-color: rgb(48, 54, 78);
-      color: white;
-      padding: 16px 32px;
-      text-align : center;
-      text-decoration: none;
-      font-size: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 0 2px rgb(255, 255, 255);
-      width : 200px;
-      height : 95px;
-      top : 150px;
-      bottom : 700px;
-      left: 0;
-      right: 0;
-      margin : auto;
-      transition : all  0.25s;
+    position: relative;
+    background-color: rgb(48, 54, 78);
+    color: white;
+    padding: 16px 32px;
+    text-align : center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    width : 200px;
+    height : 95px;
+    top : 150px;
+    bottom : 700px;
+    left: 0;
+    right: 0;
+    margin : auto;
+    transition : all  0.25s;
   }
