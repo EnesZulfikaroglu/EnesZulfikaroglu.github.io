@@ -5,11 +5,15 @@
   }
   
   body {
+    background: #353540;
+
+  }
+
+  .cities {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #353540;
   }
   
   .l-container {
@@ -88,4 +92,22 @@
   .b-game-card:hover::before {
     opacity: 0.6;
     transform: rotateX(7deg) translateY(-6px) scale(1.05);
+  }
+
+  #saatKutu {
+      position: absolute;
+      background-color: rgb(48, 54, 78);
+      color: white;
+      padding: 16px 32px;
+      text-align : center;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 0 2px rgb(255, 255, 255);
+      top : 100px;
+      bottom : 700px;
+      left: 0;
+      right: 0;
+      margin : auto;
+      transition : all  0.25s;
   }
