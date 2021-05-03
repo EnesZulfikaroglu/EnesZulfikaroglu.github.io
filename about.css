@@ -15,7 +15,7 @@ body{
     width: 0;
     height: 0;
     border-top: 259px solid transparent;
-    border-left: 470px solid #d6c6b2;
+    border-left: 470px solid whitesmoke;
     border-bottom: 259px solid transparent;
     
     
@@ -69,10 +69,10 @@ body{
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
-    border: 1px solid #d6c6b2;
+    border: 1px solid whitesmoke;
     margin-right: 10px;
-    font-size: 22px;
-    color: #d6c6b2;
+    font-size: 28px;
+    color: whitesmoke;
     transition: all .3s;
     
 }
@@ -80,8 +80,8 @@ body{
 
 #about .about-link li a i:hover{
     color: #222222;
-    background: #d6c6b2;
-    border-color: #d6c6b2;
+    background: whitesmoke;
+    border-color: whitesmoke;
 }
 
 
@@ -104,7 +104,7 @@ body{
 }
 
 .color-3{
-    color: #d6c6b2;
+    color: whitesmoke;
 }
 
 
@@ -115,9 +115,9 @@ body{
 
 p{
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 24px;
-    color: #d6c6b2;
+    color: whitesmoke;
 }
 
 .btn-danger{
@@ -139,27 +139,9 @@ p{
 }
 
 #mail {
-    color: #d6c6b2;
+    color: whitesmoke;
 }
 
 em {
-    color: #d6c6b2;
-}
-
-a#kopru {
-    position: absolute;
-    background-color: rgb(48, 54, 78);
-    color: white;
-    padding: 16px 32px;
-    text-align : center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
-    width : auto;
-    height : auto;
-    top : 50px;
-    left: 20px;
-    margin : auto;
-    transition : all  0.25s;
+    color: whitesmoke;
 }
