@@ -33,7 +33,7 @@
   .city-card {
     position: relative;
     z-index: 1;
-    width: 100%;
+    width: 105%;
     padding-bottom: 150%;
     perspective: 1000px;
   }
@@ -116,8 +116,27 @@
     box-shadow: 0 0 0 2px rgb(255, 255, 255);
     width : auto;
     height : auto;
-    top : 250px;
+    top : 300px;
     bottom : 700px;
+    left: 0;
+    right: 0;
+    margin : auto;
+    transition : all  0.25s;
+  }
+
+   #sehirKutu {
+    position: relative;
+    background-color: rgb(48, 54, 78);
+    color: white;
+    padding: 16px 32px;
+    text-align : center;
+    text-decoration: none;
+    font-size: 95px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    width : auto;
+    height : auto;
+    top : 0px;
+    bottom : 1000px;
     left: 0;
     right: 0;
     margin : auto;
