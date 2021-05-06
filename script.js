@@ -1,8 +1,19 @@
 function saatGoster(city) {
-	var saat = document.getElementById("saatKutu");
-	var sehir = document.getElementById("sehirKutu");
-	saat.innerText = new Date().toLocaleString("en-US", {timeZone: city}).split(",")[1];
+    var sehir = document.getElementById("sehirKutu");
 	sehir.innerText = city.split("/")[1].replace("_"," ").toUpperCase();
+
+	var saat = document.getElementById("saatKutu");
+	var clockText = new Date().toLocaleString("en-US", {timeZone: city}).split(",")[1];
+
+    if(clockText.split(" ")[2] == "PM")
+    {
+        clockText = String(Number(clockText.slice(0,2))+12) + clockText.slice(2,-3);
+    }
+    else
+    {
+        clockText = clockText.slice(0,-3);
+    }
+    saat.innerText = clockText;
     
 }
 
