@@ -2,7 +2,7 @@ function saatGoster(city) {
 	var saat = document.getElementById("saatKutu");
 	var sehir = document.getElementById("sehirKutu");
 	saat.innerText = new Date().toLocaleString("en-US", {timeZone: city}).split(",")[1];
-	sehir.innerText = city.split("/")[1];
+	sehir.innerText = city.split("/")[1].replace("_"," ").toUpperCase();
     
 }
 

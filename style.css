@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
   body {
     background: #353540;
   }
@@ -20,7 +14,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
     padding: 30px;
   }
 
@@ -32,7 +26,8 @@
   
   .city-card {
     position: relative;
-    z-index: 1;
+    margin-top: -450px; 
+    z-index: 0;
     width: 105%;
     padding-bottom: 150%;
     perspective: 1000px;
@@ -40,7 +35,7 @@
 
   .city-card__cover {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
@@ -106,46 +101,41 @@
   }
 
   #saatKutu {
-    position: relative;
-    background-color: rgb(48, 54, 78);
+    position : relative;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
     color: white;
     padding: 16px 32px;
     text-align : center;
     text-decoration: none;
     font-size: 95px;
     box-shadow: 0 0 0 2px rgb(255, 255, 255);
-    width : auto;
+    width : 100%;
     height : auto;
-    top : 300px;
-    bottom : 700px;
     left: 0;
     right: 0;
     margin : auto;
-    transition : all  0.25s;
   }
 
    #sehirKutu {
-    position: relative;
-    background-color: rgb(48, 54, 78);
+    position : relative;
     color: white;
     padding: 16px 32px;
     text-align : center;
     text-decoration: none;
     font-size: 95px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
-    width : auto;
+    font-family: fantasy;
+    width : 100%;
     height : auto;
-    top : 0px;
-    bottom : 1000px;
     left: 0;
     right: 0;
     margin : auto;
-    transition : all  0.25s;
   }
 
   a#kopru {
     position: absolute;
-    background-color: rgb(48, 54, 78);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
     color: white;
     padding: 16px 32px;
     text-align : center;
@@ -155,8 +145,7 @@
     box-shadow: 0 0 0 2px rgb(255, 255, 255);
     width : auto;
     height : auto;
-    top : 50px;
-    left: 20px;
+    top : 5%;
+    left: 5%;
     margin : auto;
-    transition : all  0.25s;
 }
