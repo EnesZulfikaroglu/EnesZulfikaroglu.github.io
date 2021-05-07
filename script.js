@@ -7,12 +7,14 @@ function saatGoster(city) {
 
     if(clockText.split(" ")[2] == "PM")
     {
-        clockText = String(Number(clockText.slice(0,2))+12) + clockText.slice(2,-3);
+        var clockTextTemp = String(Number(clockText.split(":")[0].trim())+12);
+        clockText = clockText.slice(clockText.indexOf(":"));
+        clockText = clockTextTemp.concat(clockText);
     }
-    else
-    {
-        clockText = clockText.slice(0,-3);
-    }
+    
+    clockText = clockText.slice(0,-3).replace(" ","0");
+    
+    console.log(clockText);
     saat.innerText = clockText;
     
 }
@@ -20,7 +22,6 @@ function saatGoster(city) {
 function onClick(cityID) {
     city = cityID;
     console.log(cityID);
-    console.log(typeof(cityID));
     saatGoster(city);
 }
 
