@@ -12,11 +12,15 @@ function saatGoster(city) {
         clockText = clockTextTemp.concat(clockText);
     }
     
-    clockText = clockText.slice(0,-3).replace(" ","0");
+    clockText = clockText.trim().slice(0,-3);
+
+    if(clockText.split(":")[0].length == 1)
+    {
+        clockText = "0" + clockText;
+    }
     
     console.log(clockText);
     saat.innerText = clockText;
-    
 }
 
 function onClick(cityID) {
