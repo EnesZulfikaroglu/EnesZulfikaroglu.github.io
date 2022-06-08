@@ -1,151 +1,184 @@
-  body {
-    background: #353540;
-  }
-
-  .cities {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .l-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    width: 100%;
-    max-width: 100%;
-    padding: 30px;
-  }
-
-  @media screen and (max-width: 760px) {
-    .l-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  .city-card {
-    position: relative;
-    margin-top: -450px; 
-    z-index: 0;
-    width: 105%;
-    padding-bottom: 150%;
-    perspective: 1000px;
-  }
-
-  .city-card__cover {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-image: linear-gradient(120deg, #777672 0%, #757171 100%);
-    background-size: cover;
-    perspective-origin: 50% 50%;
-    transform-style: preserve-3d;
-    transform-origin: top center;
-    will-change: transform;
-    transform: skewX(0.001deg);
-    transition: transform 0.35s ease-in-out;
-  }
-
-  .city-card__cover::after {
-    display: block;
-    content: "";
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120%;
-    background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
-    transform: translateY(-20%);
-    will-change: transform;
-    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
-  }
-
-  .city-card:hover .city-card__cover {
-    transform: rotateX(7deg) translateY(-6px);
-  }
-
-  .city-card:hover .city-card__cover::after {
-    transform: translateY(0%);
-  }
-
-  .city-card::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
-    will-change: opacity;
-    transform-origin: top center;
-    transform: skewX(0.001deg);
-    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
-  }
-
-  .city-card:hover::before {
-    opacity: 0.6;
-    transform: rotateX(7deg) translateY(-6px) scale(1.05);
-  }
-
-  button {
-    color : White;
-    font-size : 50px;
-  }
-
-  #saatKutu {
-    position : relative;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
-    color: white;
-    padding: 16px 32px;
-    text-align : center;
-    text-decoration: none;
-    font-size: 95px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
-    width : 100%;
-    height : auto;
-    left: 0;
-    right: 0;
-    margin : auto;
-  }
-
-   #sehirKutu {
-    position : relative;
-    color: white;
-    padding: 16px 32px;
-    text-align : center;
-    text-decoration: none;
-    font-size: 95px;
-    font-family: fantasy;
-    width : 100%;
-    height : auto;
-    left: 0;
-    right: 0;
-    margin : auto;
-  }
-
-  a#kopru {
-    position: absolute;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
-    color: white;
-    padding: 16px 32px;
-    text-align : center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
-    width : auto;
-    height : auto;
-    top : 5%;
-    left: 5%;
-    margin : auto;
+body {
+  background: #1f1f24;
 }
+
+.cities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.l-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 100%;
+  padding: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .l-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.city-card {
+  position: relative;
+  margin-top: -450px; 
+  z-index: 0;
+  width: 105%;
+  padding-bottom: 150%;
+  perspective: 1000px;
+}
+
+.city-card__cover {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #777672 0%, #757171 100%);
+  background-size: cover;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out;
+}
+
+.city-card__cover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+  transform: translateY(-20%);
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+.city-card:hover .city-card__cover {
+  transform: rotateX(7deg) translateY(-6px);
+}
+
+.city-card:hover .city-card__cover::after {
+  transform: translateY(0%);
+}
+
+.city-card::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+  will-change: opacity;
+  transform-origin: top center;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.city-card:hover::before {
+  opacity: 0.6;
+  transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
+button {
+  color : White;
+  font-size : 50px;
+}
+
+#saatKutu {
+  position : relative;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  font-family: fantasy;
+  color: rgb(0, 0, 0);
+  padding: 16px 32px;
+  text-align : center;
+  text-decoration: none;
+  font-size: 95px;
+  width : 100%;
+  height : auto;
+  left: 0;
+  right: 0;
+  margin : auto;
+  border-radius: 20px;
+  box-shadow:
+  0 0 60px 30px #fff,  /* inner white */
+  0 0 100px 60px #f0f, /* middle magenta */
+  0 0 140px 90px #0ff; /* outer cyan */
+
+  text-transform: uppercase;
+background-image: linear-gradient(
+  -225deg,
+  #231557 0%,
+  #44107a 29%,
+  #ff1361 67%,
+  #fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+    font-size: 100px;
+}
+
+@keyframes textclip {
+to {
+  background-position: 200% center;
+}
+}
+
+ #sehirKutu {
+  position : relative;
+  color: white;
+  padding: 16px 32px;
+  text-align : center;
+  text-decoration: none;
+  font-size: 95px;
+  font-family: fantasy;
+  width : 100%;
+  height : auto;
+  left: 0;
+  right: 0;
+  margin : auto;
+}
+
+a#kopru {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+  color: white;
+  padding: 16px 32px;
+  text-align : center;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  width : auto;
+  height : auto;
+  top : 5%;
+  left: 5%;
+  margin : auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

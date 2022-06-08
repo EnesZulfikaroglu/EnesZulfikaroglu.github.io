@@ -45,3 +45,4 @@ London.addEventListener('click', function(){ onClick(London.id); });
 
 saatGoster(city);
 setInterval("saatGoster(city)", 1000);
+
